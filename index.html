@@ -16,7 +16,7 @@
 <body>
     <!-- comment HTML -->
     <!-- nhom the HTML lam viec voi tieu de, van ban, dinh dang tieu de + van ban -->
-    <h1>
+    <h1 id="title" class="title title2">
         <span>
             <!-- HTML inline -->
             <i>AAAAAAAAAA</i>
@@ -25,10 +25,117 @@
         </span>
     </h1>
     <!-- HTML block -->
-    <p> Group trao đổi <mark>Hoc Tap</mark> của các bạn trong lớp REACTJS2011E </p>
+    <p class="title" id="block"> Group trao đổi <mark>Hoc Tap</mark> của các bạn trong lớp REACTJS2011E </p>
     <p>Giam gia: <del>20,000,000</del> : <strong>18,000,000</strong></p>
     
+    <!-- HTML links -->
+    <a target="_blank" href="https://github.com/" title="github"> Github</a>
+    <br/><br/>
+    <!-- HTML list/danh sach -->
+    <ul>
+        <!-- Neo link / anchor link -->
+        <li><a href="#"> Home </a></li>
+        <li><a href="#"> Home </a></li>
+        <li><a href="#"> Home </a></li>
+        <li><a href="#title"> Home </a></li>
+    </ul>
+    <ol>
+        <!-- Neo link / anchor link -->
+        <li><a href="#"> Home </a></li>
+        <li><a href="#"> Home </a></li>
+        <li><a href="#"> Home </a></li>
+        <li><a href="#title"> Home </a></li>
+    </ol>
+    <br/><br/>
+    <!-- HTML table -->
+    <table width="100%" border="1" cellspacing="0" cellpadding="0">
+        <thead>
+            <tr>
+                <th>MSV</th>
+                <th>Ho Ten</th>
+                <th> Nam sinh</th>
+                <th> Que Quan</th>
+                <th> Hoc bong</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>113</td>
+                <td>Van Teo</td>
+                <td rowspan="3">2000</td>
+                <td rowspan="2">Ha Noi</td>
+                <td>1000000</td>
+            </tr>
+            <tr>
+                <td>114</td>
+                <td>Van Ty</td>
+                <!-- <td>2000</td> -->
+                <!-- <td>Ha Noi</td> -->
+                <td>1000000</td>
+            </tr>
+            <tr>
+                <td>115</td>
+                <td>Thi No</td>
+                <!-- <td>2000</td> -->
+                <td>Bac Giang</td>
+                <td>1000000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Tong hoc bong</td>
+                <td>3000000</td>
+            </tr>
+        </tfoot>
+    </table>
 
+    <!-- HTML media - multimedia -->
+    <img width="200" height="200" src="image/icon.png" alt="test demo" />
+    <br/>
+    <audio src="media/test.mp3" controls autoloop loop autobuffer></audio>
+    <br/>
+    <video width="500" height="500" src="media/test.mp4" controls autoloop loop autobuffer poster="image/icon.png"></video>
+    <br/>
+    <!-- HTML youtube -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uRwPB-_O9cE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br/>
+    <iframe width="560" height="315" src="https://vnexpress.net" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br/>
+    <!-- HTML Do hoa -->
+    <canvas style="width: 300px; height: 300px; border: 1px solid red;"></canvas>
+    <br/><br/>
+    <!-- HTML layout -->
+    <!-- xem file layouts.html -->
+    <!-- HTML Forms -->
+    <form>
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="enter username ..." value="admin" />
+        <br/><br/>
+        <label for="password">password</label>
+        <input type="password" id="password" placeholder="enter password ..."  />
+        <br/><br/>
+        <label for="email">email</label>
+        <input type="email" id="email" placeholder="enter email ..."  />
+        <br/><br/>
+        <label for="url">URL</label>
+        <input type="url" id="url" placeholder="enter url ..."  />
+        <br/><br/>
+        <label for="color">color</label>
+        <input type="color" id="color"/>
+        <br/><br/>
+        <label for="color">color</label>
+        <input type="date" id="color"/>
+        <input type="week" id="color"/>
+        <br/><br/>
+        <label for="birthday">Birthday</label>
+        <select id="birthday">
+            <option value="1">01</option>
+            <option value="3">03</option>
+            <option value="4">04</option>
+        </select>
+        <br/><br/>
+        <button type="submit"> Submit</button>
+    </form>
 </body>
 
 </html>

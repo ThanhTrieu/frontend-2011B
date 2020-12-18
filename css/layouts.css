@@ -1,0 +1,48 @@
+/* Comment CSS */
+/* reset browser */
+*,*::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1600px;
+}
+.header {
+  width: 100%;
+  min-height: 120px;
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+}
+.nav {
+  width: 100%;
+  min-height: 40px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.nav h2 {
+  color: white;
+}
+.main {
+  width: 100%;
+  min-height: 600px;
+  background-color: whitesmoke;
+  display: flex;
+  /* justify-content: space-between; */
+}
+.main__left{
+  width:60%;
+}
+.main__section {
+  height: 50%;
+  background-color: yellow;
+}
+.main__article {
+  height: 50%;
+  background-color: green;
+}
+.main__right{
+  width: 40%;
+}
