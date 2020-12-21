@@ -1,0 +1,120 @@
+/* comment CSS */
+*, *::before, *::after {
+  margin:0;
+  padding:0;
+}
+
+/* Selector basic */
+/* id selector */
+/* #title {
+  color: blue;
+} */
+/* class selector */
+.title {
+  color: green;
+}
+/* HTML selector */
+h1.title {
+  color: red;
+}
+input[type='text'] {
+  border: 1px solid red;
+}
+input[class~='email'] {
+  border: 1px solid blue;
+}
+input[class*='user'] {
+  border: 1px solid yellow;
+}
+/* a[href$='.vn'] {
+  color: pink;
+} */
+/* a[href^='https'] {
+  color: violet;
+} */
+a[class^='in'] {
+  color: red;
+}
+p[class|='title'] {
+  color: orange;
+}
+.header .header__logo {
+  width: 200px;
+  height: 50px;
+  background-color: green;
+}
+.header  .header__tilte {
+  color: red;
+}
+.parent > .box .box-child + .box-child-2 > div.content > h1.title + p.title {
+  color: red;
+}
+div.pesudo :first-child {
+  color: red;
+}
+div.pesudo :first-of-type {
+  color: blue;
+}
+div.pesudo :last-child {
+  color: green;
+}
+div.pesudo :last-of-type {
+  color: yellow;
+}
+div.pesudo :nth-child(4) {
+  color: pink;
+}
+div.pesudo :nth-of-type(4) {
+  color:violet;
+}
+div.pesudo :nth-last-child(3) {
+  color: orange;
+}
+div.pesudo :nth-last-of-type(3) {
+  color: aqua;
+}
+div.only-child :only-child {
+  color: red;
+}
+input[name='username']:focus {
+  width: 500px;
+  height: 30px;
+  border: 3px solid red;
+  outline:none;
+}
+input[type='checkbox']:checked {
+  width: 300px;
+  height: 300px;
+}
+div.links a:active {
+  color: red;
+}
+div.links a:visited {
+  color:yellow;
+}
+div.links a:link {
+  color:green;
+}
+div.link a:hover {
+  text-decoration: none;
+  color: pink;
+}
+div.pesudo-element p::first-letter{
+  font-size: 100px;
+  color:red;
+  /* width: 5000px; */
+}
+div.pesudo-element p::first-line {
+  color: blue;
+}
+div.pesudo-element p::before {
+  /* content: url('../image/icon.png'); */
+  content: 'hello';
+}
+div.pesudo-element p::after {
+  /* content: url('../image/icon.png'); */
+  content: 'good bye';
+}
+div.pesudo-element p::selection {
+  color: yellow;
+}
