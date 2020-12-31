@@ -1,0 +1,54 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+}
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
+/* bien css */
+:root {
+  --primary: #64c29e;
+  --heading: #353738;
+  --text: #848789;
+  --bg-light: #f7f7f7;
+  --bg-white:#ffffff;
+  --bg-dark: #282f35;
+  --input-border: #d3d7d9;
+  --input-text: #c8c8c8;
+}
+/* css dung chung */
+a {
+  text-decoration: none;
+}
+button, input, textarea {
+  outline: none;
+  box-shadow: none;
+  font-family: 'Lato', sans-serif;
+}
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.wrapper {
+  max-width: 160rem;
+  margin: 0 auto;
+}
+.header {
+  min-height: 80rem;
+  background-image: url('../image/bg-header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+}
