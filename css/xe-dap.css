@@ -45,7 +45,7 @@ img {
 }
 .header {
   min-height: 80rem;
-  background-image: url('../image/bg-header.jpg');
+  background-image: url('../images/img-bg-header.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
