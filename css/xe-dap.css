@@ -35,10 +35,10 @@ button, input, textarea {
 button {
   cursor: pointer;
 }
-img {
+/* img {
   display: block;
   max-width: 100%;
-}
+} */
 .wrapper {
   max-width: 160rem;
   margin: 0 auto;
@@ -51,4 +51,142 @@ img {
   background-position: center center;
   display: flex;
   justify-content: center;
+}
+.nav {
+  margin-top: 3.5rem;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+.nav__item {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  position: relative;
+}
+.nav__item:first-child::after, .nav__item:nth-child(4)::after {
+  content: '.';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 2rem;
+}
+.nav__link {
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--heading);
+}
+/* end css header */
+.feature__header {
+  padding: 11.5rem 1.5rem 14.5rem;
+  background-color: var(--bg-light);
+}
+.feature__img-top {
+  margin: 0 auto 3.5rem;
+}
+.feature__heading {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+  color: var(--heading);
+  letter-spacing: 0.5rem;
+  text-align: center;
+  margin-bottom: 3.3rem;
+}
+.feature__header-desc {
+  max-width: 105rem;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  color: var(--text);
+  line-height: 1.6;
+  text-align: center;
+}
+.feature__item {
+  display: flex;
+  flex-flow: row wrap;
+  height: 60rem;
+  overflow: hidden;
+}
+.feature__item-img {
+  width: 67%;
+  position: relative;
+}
+.feature__item-content {
+  width: 33%;
+}
+.feature__item-img .img__bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.feature__item-img .img__brand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.feature__item-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.feature__item-content-top {
+  padding: 0 7rem;
+  position: relative;
+  background-color: var(--bg-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 67%;
+}
+.feature__item-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: justify;
+  color: var(--text);
+  padding-bottom: 3.9rem;
+  position: relative;
+}
+.feature__item-content-bottom {
+  height: 33%;
+}
+/* doi vi tri cua li thu 2  */
+.feature__item:nth-child(2) .feature__item-img {
+  order: 2;
+}
+/* lam viec voi li so 3 */
+.feature__item:last-child > .feature__item-img {
+  width: 33%;
+}
+.feature__item:last-child > .feature__item-content {
+  width: 34%;
+}
+/* tao mui ten quay xuong anh */
+.feature__item-content-top::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%) rotate(45deg);
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--bg-white);
+  z-index: 10;
+}
+/* tao duong gach ngang */
+.feature__item-text::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5rem;
+  height: 1px;
+  background-color: var(--text);
 }
